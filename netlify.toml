@@ -4,4 +4,4 @@
 
 [[functions]]
   path = "/.netlify/functions/backend"  # URL path to your function
-  function = "backend"                # Name of your function (filename without .js)
+  function = "backend"                 # Name of your function (filename without .js)
