@@ -1,0 +1,7 @@
+[build]
+  functions = "."  # Functions are in the root directory
+  publish = "."    # Static files are in the root directory
+
+[[functions]]
+  path = "/.netlify/functions/backend"  # URL path to your function
+  function = "backend"                # Name of your function (filename without .js)

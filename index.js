@@ -12,7 +12,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     console.log("Submitting form...");
 
     try {
-      const response = await fetch("http://192.168.1.7:3000/api/send-email", {
+      const response = await fetch("/.netlify/functions/backend", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
