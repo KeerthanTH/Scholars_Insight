@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d0d0d0;
+  /* background-color: aqua; */
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #151515;
+  color: white;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.images {
+  margin-right: auto;
+}
+
+.text {
+  text-align: center;
+  flex: 1;
+}
+
+.text h1,
+.text p {
+  margin: 0.5em 0;
+}
+
+.text p {
+  padding: 5px 0 5px 284px;
+  font-size: 20px;
+}
+
+.text h1 {
+  padding-right: 100px;
+  font-size: 40px;
+}
+
+header .images img {
+  width: 150px;
+  height: 100px;
+}
+
+/* Container styles */
+.container {
+  border-radius: 5px;
+  width: 80vw;
+  /* Adjust width as needed */
+  padding: 20px;
+  margin: 20px auto;
+  /* Center the container horizontally */
+  display: flex;
+  flex-direction: row;
+  /* Display children side by side */
+  justify-content: space-between;
+  /* background-color: #A9A9A9; */
+  background-color: #dcdcdc;
+  /* Ensure space between children */
+}
+
+/* Class-images styles */
+.class-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  /* Space between images and about section */
+}
+
+.class-images img {
+  width: 320px;
+  /* Adjust the width */
+  height: 300px;
+  /* Adjust the height */
+  margin-bottom: 10px;
+  /* Space between images */
+}
+
+/* About styles */
+.about {
+  flex: 2;
+  padding: 20px;
+  background-color: #d0d0d0;
+  /* Background color for about section */
+  border-radius: 5px;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about p {
+  font-size: 35px;
+  margin-top: 25px;
+  text-overflow: clip;
+}
+
+/* Cards section styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows the cards to wrap if they exceed the width of the container */
+  gap: 20px;
+  /* Adds space between the cards */
+  justify-content: center;
+  /* Centers the cards horizontally */
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background-color: white;
+  /* Set background color of the card */
+}
+
+.card-image {
+  background: linear-gradient(135deg, #ffeb3b 0%, #2e7d32 100%);
+  /* Gradient background */
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  /* Rounded top corners */
+}
+
+.card-image img {
+  width: 100px;
+  /* Adjust size as needed */
+  height: auto;
+}
+
+.card-text h3 {
+  margin-top: 20px;
+  color: #333;
+  /* Set color of the text */
+}
+
+/* Add padding for the card content */
+.card-text {
+  padding: 20px;
+}
+
+/* Form section styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  /* Adjust width as needed */
+  margin: 40px auto;
+  /* Center the form horizontally */
+  padding: 20px;
+  border: 2px solid black;
+  background-color: #f9f9f9;
+  /* Background color for form */
+  border-radius: 5px;
+  /* height:15vh; */
+}
+.footer-text{
+  height: 15vh;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form h3 {
+  text-align: center;
+  margin-bottom: 20px;;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form button:hover {
+  background-color: #555;
+}
+
+/* Services list styling */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* gap: 20px; */
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  background-color: #dcdcdc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.services .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
+  /* border-radius: 5px; */
+  width: 70vw;
+  width: 100%;
+  /* padding-bottom: 0px; */
+  background-color: #d0d0d0;
+}
+.services .question h4 {
+  font-size: 2rem;
+}
+.services .question p{
+  font-size: 1.6rem;
+}
+
+.services .offerings {
+  width: 100%;
+}
+.offerings .list{
+  background-color: #d0d0d0;
+
+}
+
+.services .offerings .list h3 {
+  font-size: 2.4rem ;
+  /* margin-left: 20px; */
+}
+
+.services .offerings li {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  /* Start hidden */
+  animation: fadeInUp 0.5s ease forwards;
+  /* Animation to fade in */
+  animation-delay: calc(var(--order) * 1.5s);
+  /* Stagger animation delay */
+  list-style: none;
+}
+
+.services .offerings li h4 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.services .offerings li p {
+  font-size: 1.6rem;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start slightly below */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* End at original position */
+  }
+}
+
+/* Apply CSS variable for staggered delay */
+.services .offerings li:nth-child(1) {
+  --order: 0;
+}
+
+.services .offerings li:nth-child(2) {
+  --order: 1;
+}
+
+.services .offerings li:nth-child(3) {
+  --order: 2;
+}
+
+.services .offerings li:nth-child(4) {
+  --order: 3;
+}
+
+.services .offerings li:nth-child(5) {
+  --order: 4;
+}
+
+.services .offerings li:nth-child(6) {
+  --order: 5;
+}
+
+/* whatapp-button design */
+.whatsapp-button {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: black;
+  /* Fallback in case image doesn't load */
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer-desgin */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+.footer .email-link a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+
+  .header,
+  .container {
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 1em 0.5em;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+
+  .text p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .class-images img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    padding: 10px;
+  }
+
+  .about h3 {
+    font-size: 2.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .form {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .services {
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+  }
+
+  .services .question {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .services .questions h4 {
+    font-size: 0.5rem;
+  }
+
+  .services .offerings .list h3 {
+    font-size: 1.5rem;
+  }
+
+  .services .offerings li {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .services .offerings li h3 {
+    font-size: 1.5rem;
+  }
+
+  .services .offerings li p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+
+  .header,
+  .container {
+    flex-direction: column;
+  }
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    padding: 1em 0.5em;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+    padding-right: 0;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+  .class-images{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .class-images img {
+    /* width: 100%; */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    padding: 7px;
+    margin: auto;
+    width: 100vw;
+
+  }
+
+  .about h3 {
+    font-size: 2rem;
+
+  }
+
+  .about p {
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .form {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .services {
+    flex-direction: column;
+    width: 95%;
+    padding: 0;
+  }
+
+  .services .question {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+  }
+.services .question p{
+    font-size: 1rem;
+  }
+  .services .question h4 {
+    font-size: 1.6rem;
+  }
+
+  .services .offerings .list h3 {
+    font-size: 1.6rem;
+    padding-top: 20px;
+  } 
+
+  .services .offerings li {
+    font-size: 0.8rem;
+    padding: 5px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .services .offerings li h4 {
+    font-size: 1.2rem;
+  }
+
+  .services .offerings li p {
+    font-size: 1rem;
+  }
+}
