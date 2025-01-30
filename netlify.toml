@@ -1,7 +1,10 @@
 [build]
-    functions = "."
-    publish = "."
+  functions = "."
+  publish = "."
 
 [[functions]]
-    path = "./netlify/functions/backend"
-    function = "backend"
+  path = "/.netlify/functions/backend"
+  function = "backend"
+
+
+    
