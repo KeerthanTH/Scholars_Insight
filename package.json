@@ -1,5 +1,5 @@
 {
-  "name": "your-project-name", 
+  "name": "scholars-insight", 
   "dependencies": {
     "nodemailer": "^6.10.0" 
   },
