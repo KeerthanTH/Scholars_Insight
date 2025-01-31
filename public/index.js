@@ -35,11 +35,14 @@ document.getElementById("contactForm").addEventListener("submit", async (event) 
 
     const result = await response.json();
 
-    if (result.success) {
-      alert("Email sent successfully!");
-    } else {
-      alert(`Failed to send email: ${result.message}`); 
-    }
+    const result = await response.json();
+
+if (response.ok && result.success) {
+  alert("Email sent successfully!");
+} else {
+  alert(`Failed to send email: ${result.message || "Unknown error occurred."}`);
+}
+
 
   } catch (error) {
     console.error("Error:", error);
