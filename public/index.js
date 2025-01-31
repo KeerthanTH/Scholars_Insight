@@ -1,23 +1,28 @@
-document.getElementById("contactForm").addEventListener("submit", async function (event) {
+document.getElementById("contactForm").addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    mobile: document.getElementById("mobile").value,
-    message: document.getElementById("message").value,
-  };
-
-  console.log("Form Data:", formData);
-  console.log("Submitting form...");
-
   try {
+    // Get form data
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value, // Optional field
+      mobile: document.getElementById("mobile").value, // Optional field
+      message: document.getElementById("message").value,
+    };
+
+    // Validate required fields
+    if (!formData.name || !formData.message) {
+      alert("Please enter your Name and Message.");
+      return; 
+    }
+
+    // Send data to Netlify function
     const response = await fetch("/.netlify/functions/hello-world", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(formData), 
     });
 
     if (!response.ok) {
@@ -25,14 +30,15 @@ document.getElementById("contactForm").addEventListener("submit", async function
     }
 
     const result = await response.json();
+
     if (result.success) {
       alert("Email sent successfully!");
     } else {
-      alert("Failed to send email. Please try again.");
+      alert(`Failed to send email: ${result.message}`); 
     }
 
   } catch (error) {
     console.error("Error:", error);
-    alert("An error occurred. Please try again.");
+    alert("An error occurred while sending the email. Please try again later.");
   }
 });
