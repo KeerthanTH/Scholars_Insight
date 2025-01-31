@@ -35,8 +35,6 @@ document.getElementById("contactForm").addEventListener("submit", async (event) 
 
     const result = await response.json();
 
-    const result = await response.json();
-
 if (response.ok && result.success) {
   alert("Email sent successfully!");
 } else {
