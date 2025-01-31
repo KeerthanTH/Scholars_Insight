@@ -5,7 +5,15 @@ exports.handler = async (event) => {
 
   try {
     // 1. Get form data from the request body
-    const formData = JSON.parse(event.body);
+   const formData = event.body ? JSON.parse(event.body) : null;
+
+if (!formData) {
+  console.log("Request body is empty");
+  return {
+    statusCode: 400,
+    body: JSON.stringify({ error: "Empty request body received." }),
+  };
+}
 
     // 2. Validate form data
 if (!formData.name || !formData.message ) {
