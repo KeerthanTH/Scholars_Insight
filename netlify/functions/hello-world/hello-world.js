@@ -40,7 +40,7 @@ console.log("Transporter created successfully!",transporter);
       from: process.env.EMAIL_USER,
       to: "scholarsinsight1618@gmail.com", // Replace with the recipient email
       subject: "New Message from Scholar's Insight",
-      text: `Name: ${formData.name}\nEmail: ${formData.mail}\n Mobile: ${formData.mobile}\nMessage: ${formData.message}`,
+      text: `Name: ${formData.name}\nEmail: ${formData.email}\n Mobile: ${formData.mobile}\nMessage: ${formData.message}`,
     };
 
     const info = await transporter.sendMail(mailOptions);
